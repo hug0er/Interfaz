@@ -1,3 +1,35 @@
-<p>
-  data works!
+<h1 class= "title text text-wrap">
+Step 1 - Submit Data set  
+</h1>
+
+<p class= "description text text-wrap" >
+Please submit the training set, validation set and test set according to the following structure:
 </p>
+
+<div class= "container-std">
+<input type="file"  ng2FileSelect [uploader]="uploader" />
+
+<button type="button" class="btn btn-success btn-s submit-button" 
+  (click)="uploader.uploadAll()" 
+  [disabled]="!uploader.getNotUploadedItems().length" >
+      Submit Training set
+</button>
+</div>
+
+<div class= "container-std">
+<input type="file"  ng2FileSelect [uploader]="uploader" />
+<button type="button" class="btn btn-success btn-s submit-button" 
+  (click)="uploader.uploadAll()" 
+  [disabled]="!uploader.getNotUploadedItems().length" >
+      Submit Validation set
+</button>
+</div>
+
+<div class= "container-std">
+<input type="file"  ng2FileSelect [uploader]="uploader" />
+<button type="button" class="btn btn-success btn-s submit-button" 
+  (click)="uploader.uploadAll()" 
+  [disabled]="!uploader.getNotUploadedItems().length" >
+      Submit Test set
+</button>
+</div>

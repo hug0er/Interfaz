@@ -13,6 +13,10 @@ import { BarComponent } from './bar/bar.component';
 import { GraphicsComponent } from './graphics/graphics.component';
 import { RunLearningComponent } from './run-learning/run-learning.component';
 
+//para subir archivos
+import { FileSelectDirective } from 'ng2-file-upload';
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,11 +28,13 @@ import { RunLearningComponent } from './run-learning/run-learning.component';
     SummaryComponent,
     BarComponent,
     GraphicsComponent,
-    RunLearningComponent
+    RunLearningComponent,
+    FileSelectDirective
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
