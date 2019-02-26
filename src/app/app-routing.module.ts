@@ -19,7 +19,8 @@ const routes: Routes = [{ path: 'Bar', component: BarComponent },
 { path: 'MetaLearning', component: MetaLearningComponent },
 { path: 'Pool', component: PoolComponent },
 { path: 'Window', component: WindowComponent },
-{ path: 'Data', component: DataComponent }
+{ path: 'Data', component: DataComponent },
+{ path: 'Summary', component: SummaryComponent}
 ];
 
 @NgModule({
