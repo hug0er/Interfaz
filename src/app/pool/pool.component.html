@@ -1,3 +1,51 @@
-<p>
-  pool works!
-</p>
+<h1 class= "title text text-wrap">
+  Step 2 - Select methods from pool
+  </h1>
+  
+  <p class= "description text text-wrap" >
+  Please select the methods from the following pool:
+  </p>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card w-100 p-3">
+      <div class="card-body">
+        <h5 class="card-title">Method 1</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Neural Network</h6>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id felis suscipit, hendrerit purus ut, volutpat purus. Sed at mi vitae neque vestibulum feugiat non vitae erat. Vivamus id elit ut lorem tristique condimentum. Fusce ullamcorper volutpat ligula non pretium. Aliquam quam nisl, eleifend et feugiat non, laoreet sit amet ligula. Sed pretium venenatis lectus, non maximus tellus dignissim eu. Curabitur non nibh sit amet tellus condimentum gravida ac et mi. Pellentesque rhoncus nisl sapien, at tristique purus facilisis sed. Donec nec mi vel purus vestibulum luctus nec eget neque. Curabitur laoreet imperdiet leo, fringilla semper metus suscipit sed. Quisque vestibulum leo non dignissim pulvinar.</p>
+        <button *ngIf="!methods.method1" (click)="chooseMethod('method1')" class="btn btn-primary">Select</button>
+        <button *ngIf="methods.method1" (click)="chooseMethod('method1')" class="btn btn-secondary" >Unselect</button>
+      </div>
+    </div>
+    <!--  -->
+    <div class="card w-100 p-3">
+      <div class="card-body">
+        <h5 class="card-title">Method 3</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Neural Network</h6>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id felis suscipit, hendrerit purus ut, volutpat purus. Sed at mi vitae neque vestibulum feugiat non vitae erat. Vivamus id elit ut lorem tristique condimentum. Fusce ullamcorper volutpat ligula non pretium. Aliquam quam nisl, eleifend et feugiat non, laoreet sit amet ligula. Sed pretium venenatis lectus, non maximus tellus dignissim eu. Curabitur non nibh sit amet tellus condimentum gravida ac et mi. Pellentesque rhoncus nisl sapien, at tristique purus facilisis sed. Donec nec mi vel purus vestibulum luctus nec eget neque. Curabitur laoreet imperdiet leo, fringilla semper metus suscipit sed. Quisque vestibulum leo non dignissim pulvinar.</p>
+        <button *ngIf="!methods.method3" (click)="chooseMethod('method3')" class="btn btn-primary">Select</button>
+        <button *ngIf="methods.method3" (click)="chooseMethod('method3')" class="btn btn-secondary" >Unselect</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card w-100 p-3">
+      <div class="card-body">
+        <h5 class="card-title">Method 2</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Neural Network</h6>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id felis suscipit, hendrerit purus ut, volutpat purus. Sed at mi vitae neque vestibulum feugiat non vitae erat. Vivamus id elit ut lorem tristique condimentum. Fusce ullamcorper volutpat ligula non pretium. Aliquam quam nisl, eleifend et feugiat non, laoreet sit amet ligula. Sed pretium venenatis lectus, non maximus tellus dignissim eu. Curabitur non nibh sit amet tellus condimentum gravida ac et mi. Pellentesque rhoncus nisl sapien, at tristique purus facilisis sed. Donec nec mi vel purus vestibulum luctus nec eget neque. Curabitur laoreet imperdiet leo, fringilla semper metus suscipit sed. Quisque vestibulum leo non dignissim pulvinar.</p>
+        <button *ngIf="!methods.method2" (click)="chooseMethod('method2')" class="btn btn-primary">Select</button>
+        <button *ngIf="methods.method2" (click)="chooseMethod('method2')" class="btn btn-secondary" >Unselect</button>
+      </div>
+    </div>
+    <!--  -->
+    <div class="card w-100 p-3">
+      <div class="card-body">
+        <h5 class="card-title">Method 4</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Neural Network</h6>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id felis suscipit, hendrerit purus ut, volutpat purus. Sed at mi vitae neque vestibulum feugiat non vitae erat. Vivamus id elit ut lorem tristique condimentum. Fusce ullamcorper volutpat ligula non pretium. Aliquam quam nisl, eleifend et feugiat non, laoreet sit amet ligula. Sed pretium venenatis lectus, non maximus tellus dignissim eu. Curabitur non nibh sit amet tellus condimentum gravida ac et mi. Pellentesque rhoncus nisl sapien, at tristique purus facilisis sed. Donec nec mi vel purus vestibulum luctus nec eget neque. Curabitur laoreet imperdiet leo, fringilla semper metus suscipit sed. Quisque vestibulum leo non dignissim pulvinar.</p>
+        <button *ngIf="!methods.method4" (click)="chooseMethod('method4')" class="btn btn-primary">Select</button>
+        <button *ngIf="methods.method4" (click)="chooseMethod('method4')" class="btn btn-secondary" >Unselect</button>
+      </div>
+    </div>
+  </div>
+</div>
