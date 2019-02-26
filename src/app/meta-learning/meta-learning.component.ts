@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./meta-learning.component.scss']
 })
 export class MetaLearningComponent implements OnInit {
-
+  public metaMethods = {
+    "method1":false,
+    "method2":false,
+  };
   constructor() { }
-
   ngOnInit() {
   }
-
+  chooseMethod(method){
+    this.metaMethods[method]= !this.metaMethods[method];
+    console.log(this.metaMethods);
+  }
 }
