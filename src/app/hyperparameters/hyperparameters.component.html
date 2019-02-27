@@ -1,15 +1,23 @@
-<p>
-  hyperparameters works!
-</p>
-<p>
-  Learning Rate (range)
-</p>
-<p>
-  window size (int)
-</p>
-<p>
-  cuantos meses hacia adelante predice(int)
-</p>
-<p>
-  ver mas 
-</p>
+<div class="input-group container-std">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="">Learning Rate range (Upper,Lower)</span>
+  </div>
+  <input type="number" id="sup" class="form-control">
+  <input type="number" id="inf" class="form-control">
+</div>
+
+<div class="input-group container-std">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id=""> Window size </span>
+  </div>
+  <input type="number" id="win" class="form-control">
+</div>
+
+<div class="input-group container-std">
+  <div class="input-group-prepend">
+    <span class="input-group-text"> How many months ahead prediction: </span>
+  </div>
+  <input type="number" id="mon" class="form-control">
+</div>
+<!-- (click)="" -->
+<button (click)="saveValues()" class="btn btn-primary float-right">Save</button>

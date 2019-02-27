@@ -15,7 +15,10 @@ import { RunLearningComponent } from './run-learning/run-learning.component';
 
 //para subir archivos
 import { FileSelectDirective } from 'ng2-file-upload';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, FormBuilder } from '@angular/forms';
+
+//
+
 
 @NgModule({
   declarations: [
@@ -29,14 +32,14 @@ import { FormsModule } from '@angular/forms';
     BarComponent,
     GraphicsComponent,
     RunLearningComponent,
-    FileSelectDirective
+    FileSelectDirective,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [FormBuilder],
+  bootstrap: [AppComponent,]
 })
 export class AppModule { }
